@@ -2,7 +2,7 @@
      let rnk = ''
      dnk = dnk.toUpperCase()
      if (!/^[ACGT]+$/.test(dnk))
-         alert('не верно осущствлен ввод данных')
+         throw new Error('ValidationError');
      else {
          for (var i = 0; i < dnk.length; i++) {
              switch (dnk[i]) {
